@@ -2,7 +2,7 @@ import java.util.Random;
 
 public class Generator {
 
-	static StringBuilder generate(int len) {
+	static String generate(int len) {
 
 		StringBuilder password = new StringBuilder();
 		for (int i = 0; i < len; i++) {
@@ -16,7 +16,7 @@ public class Generator {
 				password.append((char) Character.toUpperCase((rnd.nextInt(26) + 'a')));
 			}
 		}
-		return password;
+		return password.toString();
 
 	}
 }
